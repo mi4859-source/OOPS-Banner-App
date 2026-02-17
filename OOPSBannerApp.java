@@ -1,4 +1,4 @@
-public class UC4PrintBanner {
+public class OOPSBannerApp {
 
     public static void main(String[] args) {
         String[] lines = new String[6];
