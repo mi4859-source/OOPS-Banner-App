@@ -1,17 +1,21 @@
 public class OOPSBannerApp {
+    public static void main(String args[]) {
+        // UC5: Combining array declaration and initialization with String.join()
+        // This removes repetitive individual assignment lines
+        String[] banner = {
+            String.join(" ", " ****** ", " ****** ", " ****** ", " ****** "),
+            String.join(" ", "**    **", "**    **", "**    **", "**      "),
+            String.join(" ", "**    **", "**    **", "**    **", "**      "),
+            String.join(" ", "**    **", "**    **", "**    **", "**      "),
+            String.join(" ", "**    **", "**    **", " ****** ", " ****** "),
+            String.join(" ", "**    **", "**    **", "**      ", "      **"),
+            String.join(" ", "**    **", "**    **", "**      ", "      **"),
+            String.join(" ", "**    **", "**    **", "**      ", "      **"),
+            String.join(" ", " ****** ", " ****** ", "**      ", " ****** ")
+        };
 
-    public static void main(String[] args) {
-        String[] lines = new String[6];
-
-        // OOPS Banner using array (UC4)
-        lines[0] = String.join(" ", "  ***  ", "  ***  ", " ****  ", " ***** ");
-        lines[1] = String.join(" ", " *   * ", " *   * ", " *   * ", " *     ");
-        lines[2] = String.join(" ", "*     *", "*     *", " ****  ", " ****  ");
-        lines[3] = String.join(" ", "*     *", "*     *", " *     ", "     * ");
-        lines[4] = String.join(" ", " *   * ", " *   * ", " *     ", " *   * ");
-        lines[5] = String.join(" ", "  ***  ", "  ***  ", " *     ", " ***** ");
-
-        for (String line : lines) {
+        // UC5: Use an enhanced for loop to iterate through the array efficiently
+        for (String line : banner) {
             System.out.println(line);
         }
     }
